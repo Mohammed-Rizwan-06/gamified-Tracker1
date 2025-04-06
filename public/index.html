@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub XP Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎮 GitHub XP Tracker</h1>
+    <h2>By Team Rizzy</h2>
+
+    <input type="text" id="username" placeholder="Enter GitHub username">
+    <button onclick="getData()">Track</button>
+    <button onclick="addToLeaderboard()">Add Me to Leaderboard</button>
+
+    <div id="result" style="display: none;">
+      <div id="leaderboard" style="margin-top: 30px;"></div>
+
+      <img id="avatar" src="" alt="Avatar" />
+      <p>🎖 Badge: <span id="badge"></span></p>
+
+      <h2 id="name"></h2>
+      <p>📦 Repos: <span id="repos"></span></p>
+      <p>⭐ XP: <span id="xp"></span></p>
+      <p>🎮 Level: <span id="level"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadLeaderboard();
+  </script>
+</body>
+</html>
